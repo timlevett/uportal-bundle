@@ -1,0 +1,9 @@
+ant.importBuild uPortalSource + '/build.xml'
+
+task deployBundle {}
+
+task deployBundleEntities (dependsOn: 'data-import'){
+//  task."data-import" -Ddir='./quickstart_entities/portlet-definition'
+}
+
+
